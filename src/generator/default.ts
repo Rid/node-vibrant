@@ -101,7 +101,7 @@ function _findColorVariation(palette: Palette, swatches: Array<Swatch>, maxPopul
     swatches.forEach((swatch) => {
         let [, s, l] = swatch.getHsl()
 
-        if (max === null || s >= minSaturation && s <= maxSaturation
+        if (s >= minSaturation && s <= maxSaturation
             && l >= minLuma && l <= maxLuma
             && !_isAlreadySelected(palette, swatch)
         ) {
