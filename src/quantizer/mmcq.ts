@@ -17,7 +17,7 @@ function _splitBoxes(pq: PQueue<VBox>, target: number): void {
 
         iteration++
         let vbox = pq.pop()
-        if (!vbox.count()) continue
+        if (!vbox || !vbox.count()) continue
 
         let [vbox1, vbox2] = vbox.split()
 

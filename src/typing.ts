@@ -14,7 +14,7 @@ export type ImageCallback = Callback<Image>
 
 export type ImageSource = string | HTMLImageElement | Buffer
 
-export type Pixels = Uint8ClampedArray | Buffer
+export type Pixels = any
 export interface ImageData {
     data: Pixels,
     width: number,

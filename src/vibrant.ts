@@ -74,5 +74,4 @@ class Vibrant {
             .asCallback(cb)
     }
 }
-
 export default Vibrant

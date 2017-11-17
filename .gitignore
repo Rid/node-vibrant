@@ -82,7 +82,5 @@ bower_components
 # Mac OSX
 .DS_Store
 
-lib/
-
 dist/
 .vscode/

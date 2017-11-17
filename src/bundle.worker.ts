@@ -1,4 +1,4 @@
-import Vibrant = require('./browser')
+import Vibrant from './browser'
 import WebWorker from './quantizer/worker'
 
 ((ns: any) => {

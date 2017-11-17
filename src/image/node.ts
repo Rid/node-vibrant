@@ -10,7 +10,7 @@ interface ProtocalHandler {
 
 }
 interface ProtocalHandlerMap {
-    [protocolName: string]: ProtocalHandler
+    [protocolName: string]: any
 }
 
 const URL_REGEX: RegExp = /^(\w+):\/\/.*/i
