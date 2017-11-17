@@ -87,13 +87,13 @@ function _createComparisonValue(
 }
 
 function _findColorVariation(palette: Palette, swatches: Array<Swatch>, maxPopulation: number,
-    targetLuma: number,
-    minLuma: number,
-    maxLuma: number,
-    targetSaturation: number,
-    minSaturation: number,
-    maxSaturation: number,
-    opts: DefaultGeneratorOptions): Swatch {
+                             targetLuma: number,
+                             minLuma: number,
+                             maxLuma: number,
+                             targetSaturation: number,
+                             minSaturation: number,
+                             maxSaturation: number,
+                             opts: DefaultGeneratorOptions): Swatch {
 
     let max: Swatch = null
     let maxValue = 0
@@ -183,9 +183,9 @@ function _generateEmptySwatches(palette: Palette, maxPopulation: number, opts: D
             let [h, s, l] = palette.DarkVibrant.getHsl()
             l = opts.targetNormalLuma
             palette.Vibrant = new Swatch(hslToRgb(h, s, l), 0)
-        } else if (palette.LightMuted !== null) {
-            let [h, s, l] = palette.LightMuted.getHsl()
-            l = opts.targetMutesSaturation
+        } else if (palette.LightVibrant !== null) {
+            let [h, s, l] = palette.LightVibrant.getHsl()
+            l = opts.targetNormalLuma
             palette.Vibrant = new Swatch(hslToRgb(h, s, l), 0)
         }
     }
