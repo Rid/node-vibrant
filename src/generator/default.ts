@@ -185,7 +185,7 @@ function _generateEmptySwatches(palette: Palette, maxPopulation: number, opts: D
             palette.Vibrant = new Swatch(hslToRgb(h, s, l), 0)
         } else if (palette.LightVibrant !== null) {
             let [h, s, l] = palette.LightVibrant.getHsl()
-            l = opts.targetNormalLuma
+            l = opts.targetDarkLuma
             palette.Vibrant = new Swatch(hslToRgb(h, s, l), 0)
         }
     }
